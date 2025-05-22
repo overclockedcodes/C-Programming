@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+
+    // Ask the user to enter 3 numbers
+    printf("Enter first number: ");
+    scanf("%d", &a);
+
+    printf("Enter second number: ");
+    scanf("%d", &b);
+
+    printf("Enter third number: ");
+    scanf("%d", &c);
+
+    // Check if numbers are in ascending order
+    if (a < b && b < c) {
+        printf("The numbers are in ascending order.\n");
+    } else {
+        printf("The numbers are NOT in ascending order.\n");
+    }
+
+    return 0;
+}

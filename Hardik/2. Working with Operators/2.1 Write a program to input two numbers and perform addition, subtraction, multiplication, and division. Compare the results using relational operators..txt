@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    int sum, sub, mul, div;
+
+    // Input numbers
+    printf("Enter first number: ");
+    scanf("%d", &a);
+
+    printf("Enter second number: ");
+    scanf("%d", &b);
+
+    // Do operations
+    sum = a + b;
+    sub = a - b;
+    mul = a * b;
+    div = a / b;  // No check for zero — be careful!
+
+    // Show results
+    printf("\nSum = %d\n", sum);
+    printf("Subtraction = %d\n", sub);
+    printf("Multiplication = %d\n", mul);
+    printf("Division = %d\n", div);
+
+    // Compare results
+    if (sum > sub)
+        printf("Sum is greater than Subtraction\n");
+    else
+        printf("Subtraction is greater than or equal to Sum\n");
+
+    if (mul == div)
+        printf("Multiplication is equal to Division\n");
+    else
+        printf("Multiplication is not equal to Division\n");
+
+    return 0;
+}

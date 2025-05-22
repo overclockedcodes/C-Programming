@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int a = 5;  // Number 5 in binary is 0101
+    int b = 3;  // Number 3 in binary is 0011
+
+    printf("a = %d, b = %d\n", a, b);
+
+    // Bitwise AND
+    printf("a & b = %d\n", a & b);
+
+    // Bitwise OR
+    printf("a | b = %d\n", a | b);
+
+    // Bitwise XOR
+    printf("a ^ b = %d\n", a ^ b);
+
+    // Bitwise NOT (only on a)
+    printf("~a = %d\n", ~a);
+
+    return 0;
+}
